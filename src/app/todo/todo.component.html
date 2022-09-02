@@ -1,0 +1,13 @@
+<div>
+    <form (submit)="addTask()">
+        <input type="text" name="inputValue" 
+        placeholder="Enter Task" [(ngModel)]="inputValue"
+        class="task-input" />
+        <input type="submit" value="Add Task" class="submit-btn" />
+    </form>
+    <hr>
+    <div *ngFor="let task of todoList" class="task-list">
+        <h2>{{task}}</h2>
+        <button class="remove-btn" (click)="removeTask(task)">Remove</button>
+    </div>
+</div>
