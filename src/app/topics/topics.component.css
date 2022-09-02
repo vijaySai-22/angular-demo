@@ -1,0 +1,28 @@
+.topics-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topics-head * {
+    margin: 5px;
+}
+
+button {
+    border: none;
+    color: blue;
+    height: 2em;
+    border-radius: 5px;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: rgb(100, 100, 248);
+    color: white;
+}
+
+h4{
+    background-color: white;
+    width: 80%;
+    margin: 5px auto;
+}

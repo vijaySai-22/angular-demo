@@ -1,0 +1,9 @@
+<div class="topics-head">
+    <h2>Covered Topics</h2>
+    <button (click)="model()">{{btnText}}</button>
+</div>
+<div *ngIf="show">
+    <div *ngFor="let topic of topics">
+        <h4>{{topic}}</h4>
+    </div>
+</div>

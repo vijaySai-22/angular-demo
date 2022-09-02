@@ -1,0 +1,20 @@
+<div>
+    <form (submit)="addTask()">
+        <input type="text" name="inputValue" 
+        placeholder="Enter Task" [(ngModel)]="inputValue"
+        class="task-input" />
+        <input type="submit" value="Add Task" class="submit-btn" />
+    </form>
+    <hr>
+    <div *ngIf="todoList.length!==0">
+        <h1>Your Tasks</h1>
+        <div *ngFor="let task of todoList" ng class="task-list">
+            <h2>{{task}}</h2>
+            <button class="remove-btn" (click)="removeTask(task)">Remove</button>
+        </div>
+    </div>
+    <div *ngIf="todoList.length===0">
+        <h1>No Tasks Found</h1>
+        <h4>Add tasks</h4>
+    </div>
+</div>
